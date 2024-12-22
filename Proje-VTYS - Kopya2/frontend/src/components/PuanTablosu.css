@@ -1,0 +1,75 @@
+.puan-tablosu-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.puan-tablosu {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.puan-tablosu th,
+.puan-tablosu td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.puan-tablosu th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.takim-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.takim-cell.clickable:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.takim-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.takim-isim {
+  flex: 1;
+  text-align: left;
+}
+
+.puan {
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 768px) {
+  .puan-tablosu {
+    font-size: 14px;
+  }
+
+  .takim-logo {
+    width: 20px;
+    height: 20px;
+  }
+
+  .puan-tablosu th,
+  .puan-tablosu td {
+    padding: 8px 4px;
+  }
+} 

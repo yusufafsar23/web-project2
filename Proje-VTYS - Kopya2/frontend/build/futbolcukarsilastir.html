@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lig Puan Durumu</title>
+    <link rel="stylesheet" href="futbolcukarsilastir.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <div class="logo">
+                <img src="resimler/logo.jpg" alt="Futbol Logo">
+            </div>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="ligpuan.html">Lig Puan Durumu</a></li>
+            <li><a href="futbolcukarsilastir.html">Futbolcu Karşılaştırma</a></li>
+            <li><a href="haber.html">Son Dakika Haberleri</a></li>
+            <li><a href="istatistik.html">Maç İstatistikleri</a></li>
+            <li><a href="futbolcuprofil.html">Futbolcu Profilleri</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+
+
+
+
+<section class="player-selection comparison-bg">
+    
+    <form id="comparison-form">
+        <center><h2 class="title-box">FUTBOLCU 1</h2></center>
+        <select id="player1" name="player1">
+            <option value="player1">Lionel Messi</option>
+            <option value="player2">Cristiano Ronaldo</option>
+            <option value="player3">Neymar</option>
+            <option value="player4">Kylian Mbappé</option>
+        </select>
+
+        <center><h2 class="title-box">FUTBOLCU 2</h2></center>
+        <select id="player2" name="player2">
+            <option value="player1">Lionel Messi</option>
+            <option value="player2">Cristiano Ronaldo</option>
+            <option value="player3">Neymar</option>
+            <option value="player4">Kylian Mbappé</option>
+        </select>
+        <br>
+
+        <button type="submit">KARŞILAŞTIR</button>
+    </form>
+</section>
+
+
+<section class="comparison-results">
+    <center><h2 class="title-box1">KARŞILAŞTIRMA SONUÇLARI</h2></center>
+    <div class="players">
+        <!-- Futbolcu 1 -->
+        <div class="player" id="player1-info">
+            <h3 id="player1-name">Lionel Messi</h3>
+            <p><strong>Yaş:</strong> <span id="player1-age">36</span></p>
+            <p><strong>Takım:</strong> <span id="player1-team">Paris Saint-Germain</span></p>
+            <p><strong>Goller:</strong> <span id="player1-goals">750</span></p>
+            <p><strong>Asistler:</strong> <span id="player1-assists">310</span></p>
+        </div>
+        <!-- Futbolcu 2 -->
+        <div class="player" id="player2-info">
+            <h3 id="player2-name">Cristiano Ronaldo</h3>
+            <p><strong>Yaş:</strong> <span id="player2-age">39</span></p>
+            <p><strong>Takım:</strong> <span id="player2-team">Al Nassr</span></p>
+            <p><strong>Goller:</strong> <span id="player2-goals">800</span></p>
+            <p><strong>Asistler:</strong> <span id="player2-assists">230</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</section>
+<footer>
+    <p>&copy; 2024 Futbolist. Tüm hakları saklıdır.</p>
+    <div class="footer-links">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="iletisim.html">İletişim</a>
+    </div>
+</footer>

@@ -1,0 +1,215 @@
+.takim-detay-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.takim-detay-content {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 95%;
+  max-width: 1400px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.close-button:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.oyuncular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.oyuncu-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.oyuncu-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.oyuncu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.oyuncu-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.oyuncu-meta {
+  display: flex;
+  gap: 8px;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.ulke-bayrak {
+  width: 30px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.oyuncu-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.stat-item {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stat-item span:first-child {
+  font-size: 0.8em;
+  color: #666;
+}
+
+.stat-item span:last-child {
+  font-weight: 500;
+  color: #333;
+}
+
+.oyuncu-detail {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.oduller-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.oduller-section li {
+  padding: 5px 0;
+  color: #666;
+}
+
+.sezon-istatistikleri {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.sezon-istatistikleri table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.sezon-istatistikleri th,
+.sezon-istatistikleri td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.sezon-istatistikleri th {
+  background-color: #f8f9fa;
+  font-weight: 500;
+}
+
+.scouting-raporu {
+  margin-top: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.stat-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stat-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.stat-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.stat-bar {
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .takim-detay-content {
+    padding: 20px;
+  }
+
+  .oyuncular-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sezon-istatistikleri {
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+} 

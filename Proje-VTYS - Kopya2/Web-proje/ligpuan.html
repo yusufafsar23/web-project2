@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lig Puan Durumu</title>
+    <link rel="stylesheet" href="ligpuan.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">FutbolAnaliz</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="ligpuan.html" class="active">Lig Puan Durumu</a></li>
+            <li><a href="canli.html">Canlı Maçlar</a></li>
+            <li><a href="istatistik.html">İstatistikler</a></li>
+            <li><a href="haber.html">Haberler</a></li>
+        </ul>
+    </nav>
+
+    <!-- React uygulamasını iframe içinde göster -->
+    <div class="puan-durumu-container">
+        <iframe 
+            src="http://localhost:3001" 
+            style="width: 100%; height: 800px; border: none; margin-top: 20px;"
+            title="Lig Puan Durumu"
+        ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 FutbolAnaliz. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html> 

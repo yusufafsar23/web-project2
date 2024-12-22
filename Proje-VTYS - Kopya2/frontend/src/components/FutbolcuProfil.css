@@ -1,0 +1,179 @@
+.futbolcu-profil-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.arama-container {
+  margin-bottom: 30px;
+}
+
+.arama-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.arama-input:focus {
+  border-color: #1a73e8;
+  outline: none;
+}
+
+.futbolcu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.futbolcu-kart {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.futbolcu-kart:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.futbolcu-baslik {
+  margin-bottom: 15px;
+}
+
+.futbolcu-baslik h3 {
+  margin: 0;
+  color: #333;
+}
+
+.takim {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.futbolcu-detaylar p {
+  margin: 5px 0;
+  color: #444;
+}
+
+/* Modal Stiller */
+.futbolcu-detay-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 90%;
+  max-width: 1000px;
+  position: relative;
+  margin: 40px auto;
+}
+
+.kapat-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+}
+
+.detay-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.kisisel-bilgiler {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.scouting-raporu {
+  margin-top: 30px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.stat-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.stat-bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.stat-dolu {
+  height: 100%;
+  background: #4CAF50;
+  transition: width 0.3s ease;
+}
+
+.sezon-istatistikleri {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.sezon-istatistikleri table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sezon-istatistikleri th,
+.sezon-istatistikleri td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sezon-istatistikleri th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .detay-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .modal-content {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+} 

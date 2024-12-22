@@ -1,0 +1,303 @@
+
+/*                                                              Futbolcu Profilleri İçin Stil                                                                */ 
+ 
+
+.player-profiles {
+    background: linear-gradient(to bottom, #365b56 50%, #7ba6a0 90% );
+    margin-top: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.player-profile-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(205, 13, 13, 0.1);
+    width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.player-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.player-profile-card h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.player-profile-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+.player-profile-card p strong {
+    color: #222;
+}
+
+/* Futbolcu Profilleri Sayfası İçin Genel Kapsayıcı */
+.player-profiles-page {
+    display: flex; /* Kartları yan yana dizmek için flex kullanılıyor */
+    justify-content: center; /* Kartları yatayda ortalıyor */
+    align-items: flex-start; /* Kartların üstten hizalanmasını sağlıyor */
+    flex-wrap: wrap; /* Küçük ekranlarda alt satıra geçiş yapıyor */
+    gap: 20px; /* Kartlar arasına boşluk bırakıyor */
+    padding: 20px;
+}
+
+/* Kart Stili */
+.player-profile-card {
+    background-color: rgba(255, 255, 255, 0.9); /* Hafif şeffaf arka plan */
+    border-radius: 10px; /* Köşeleri yuvarlama */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    width: 250px; /* Tüm kartların aynı genişlikte olması sağlanıyor */
+    min-height: 400px; /* Tüm kartların aynı yüksekliğe sahip olması için minimum yükseklik */
+    text-align: center;
+    padding: 20px;
+    display: flex; /* İçerikleri hizalamak için flex kullanılıyor */
+    flex-direction: column; /* İçerikleri dikeyde sıralıyor */
+    justify-content: space-between; /* İçerikler arasında boşluk bırakıyor */
+}
+
+/* Karttaki Resim Stili */
+.player-profile-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%; /* Yuvarlak görünüm */
+    margin-bottom: 15px;
+}
+
+/* Karttaki Metin Stili */
+.player-profile-card h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.player-profile-card p {
+    font-size: 0.9rem;
+    color: #030000;
+}
+
+.player-profile-card img {
+    display: block; /* Resmi bir blok elementi yapar */
+    margin: 0 auto; /* Yatayda ortalamak için */
+    width: 200px; /* Resim genişliği */
+    height: 200px; /* Resim yüksekliği */
+    object-fit: cover; /* Resmin düzgün bir şekilde kırpılmasını sağlar */
+    border-radius: 50%; /* Yuvarlak görünüm sağlar */
+    margin-bottom: 15px; /* Alt tarafa boşluk bırakır */
+}
+
+.player-profile-card {
+    display: flex; /* Flexbox etkinleştirme */
+    flex-direction: column; /* İçerikleri dikeyde sıralar */
+    align-items: center; /* Yatayda ortalar */
+    justify-content: center; /* Dikeyde ortalar */
+    background-color: rgba(192, 194, 143, 0.9); /* Hafif şeffaf arka plan */
+    border-radius: 10px; /* Köşeleri yuvarlar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge efekti */
+    width: 250px; /* Kart genişliği */
+    min-height: 400px; /* Kart yüksekliği */
+    text-align: center; /* Metni ortalamak için */
+    padding: 20px; /* Kart içine boşluk ekler */
+}
+
+
+
+/*                         Bir kartı ikiye bölerek iki farklı renk yapmamı sağladı                         */
+
+
+.player-profile-card {
+    background: linear-gradient(to bottom, #365b56 50%, #7ba6a0 90% );
+}
+
+.player-profile-card .card-bottom p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.player-profile-card .card-bottom p strong {
+    color: #000;
+}
+
+
+
+
+
+/*                                                                MENÜ GENEL STİLİ                                                     */
+
+
+
+
+/* Menü Genel Stili */
+nav ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menü öğelerini yatay sırala */
+    justify-content: center; /* Menü öğelerini ortala */
+    align-items: center; /* Dikey hizalama */
+    background-color: #333; /* Menü arka plan rengi */
+    border-radius: 50px; /* Sağ ve sol uçları oval yap */
+    overflow: hidden; /* Köşe taşmalarını engelle */
+}
+
+nav ul li {
+    margin: 0 20px; /* Menü öğeleri arasına boşluk bırak */
+}
+
+nav ul li a {
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: white; /* Yazı rengi */
+    font-size: 18px; /* Yazı boyutu */
+    font-weight: bold;
+    padding: 10px 15px; /* Menü öğesi içeriği için boşluk */
+    display: inline-block;
+    position: relative; /* Arka plan efekti için gerekli */
+    transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+nav ul li a:hover {
+    background-color: #218f72; /* Hover renginde değişiklik */
+    color: #fff;
+    border-radius: 25px; /* Oval hover efekti */
+    transform: scale(1.1);
+}
+
+/* Kare arka plan efekti */
+nav ul li a::before {
+    content: ''; /* Pseudo element içeriği */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Arka plan genişliği */
+    height: 100%; /* Arka plan yüksekliği */
+    background-color: rgba(14, 3, 39, 0.1); /* Arka plan rengi */
+    z-index: -1; /* Arka planı yazının arkasına yerleştir */
+    transform: scale(0); /* Varsayılan olarak gizle */
+    transition: transform 0.3s ease; /* Yumuşak geçiş efekti */
+    border-radius: 0px; /* Kare arka plan */
+}
+
+/* Hover sırasında arka planı görünür yap */
+nav ul li a:hover::before {
+    transform: scale(1); /* Arka planı görünür yap */
+}
+
+/* Logo Stili */
+.logo {
+    display: inline-block;
+    margin-right: 20px; /* Menüden uzaklık */
+    vertical-align: middle;
+}
+
+.logo img {
+    max-height: 50px; /* Logonun maksimum yüksekliği */
+    width: auto; /* Oranları koru */
+}
+/* Logo Konteyneri */
+.logo {
+    background-color: transparent; /* Arka planı şeffaf yap */
+    padding: 5px; /* Logonun iç boşluklarını ayarla */
+    border-radius: 8px; /* Köşe yuvarlama */
+    display: inline-block; /* Logoyu düzgün hizala */
+}
+
+/* Logo Resmi */
+.logo img {
+    background-color: transparent; /* Görselin arka planını kaldır */
+    mix-blend-mode: multiply; /* Görsel arka planını şeffaflaştır */
+    max-height: 50px; /* Logonun maksimum yüksekliği */
+    width: auto; /* Oranları koru */
+    display: block; /* Boşlukları kaldır */
+}
+
+
+/* Header Stili */
+header {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    justify-content: space-between; /* Menü ve logo arasında boşluk */
+    background-color: #a6ab17; /* Header arka plan rengi */
+    padding: 10px 20px; /* İç boşluk */
+    border-radius: 50px; /* Header'ı oval hale getirmek için */
+    overflow: hidden; /* İç taşmaları önlemek için */
+    margin-top: 10px; /* Menü üstü boşluk */
+    margin-left: 10px; /* Sol boşluk */
+    margin-right: 10px; /* Sağ boşluk */
+}
+
+
+/*                                                                          Menü Sabitleme                                                       */
+
+header {
+    position: fixed; /* Menü sabitlenir */
+    top: 0; /* Sayfanın en üstünde olur */
+    left: 0;
+    width: 100%; /* Sayfanın tamamını kaplar */
+    z-index: 1000; /* Menü üstte görünür */
+    background-color: #333; /* Menü arka plan rengi */
+    padding: 10px 20px; /* İç boşluk */
+    border-radius: 50px; /* Sağ ve sol oval uçlar */
+    overflow: hidden; /* Taşmaları engeller */
+}
+
+/* Sayfa İçeriği */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 80px; /* Menü yüksekliği kadar boşluk */
+    background-color: #f4f4f4;
+}
+
+
+/* Footer Stili */
+footer {
+    background-color: #333; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    text-align: center; /* Metni ortala */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    margin-top: 20px; /* İçerik ile footer arasında boşluk */
+    position: relative; /* Normalde akışta olur */
+    width: 100%; /* Sayfanın genişliğini kaplar */
+    bottom: 0;
+}
+
+footer p {
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+.footer-links {
+    margin-top: 10px; /* Üstten biraz boşluk */
+}
+
+.footer-links a {
+    color: white; /* Bağlantı rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    margin: 0 10px; /* Bağlantılar arası boşluk */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Hover sırasında renk değişimi */
+    text-decoration: underline; /* Hover sırasında alt çizgi */
+}
+
+
+
+
+
+

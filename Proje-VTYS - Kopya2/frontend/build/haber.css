@@ -1,0 +1,271 @@
+
+/*                                                                    Haberler Bölümü İçin Stil                                                               */
+
+
+.news {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Haber Stili */
+.news-item {
+    width: 30%; /* Her bir haberin genişliğini 3'te 1 yapmak */
+    background-color: #99965b;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-15px); /* Hover efekti ile hafif yükselme */
+}
+
+.news-item h3 {
+    font-size: 1.4em;
+    color: #333;
+}
+
+.news-item p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.news-item a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+/* Genel stil ayarları */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #365b56 50%, #7ba6a0 90% );
+}
+
+header {
+    background-color: #333333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                                                MENÜ GENEL STİLİ                                                     */
+
+
+
+
+/* Menü Genel Stili */
+nav ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Menü öğelerini yatay sırala */
+    justify-content: center; /* Menü öğelerini ortala */
+    align-items: center; /* Dikey hizalama */
+    background-color: #333; /* Menü arka plan rengi */
+    border-radius: 50px; /* Sağ ve sol uçları oval yap */
+    overflow: hidden; /* Köşe taşmalarını engelle */
+}
+
+nav ul li {
+    margin: 0 20px; /* Menü öğeleri arasına boşluk bırak */
+}
+
+nav ul li a {
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    color: white; /* Yazı rengi */
+    font-size: 18px; /* Yazı boyutu */
+    font-weight: bold;
+    padding: 10px 15px; /* Menü öğesi içeriği için boşluk */
+    display: inline-block;
+    position: relative; /* Arka plan efekti için gerekli */
+    transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+nav ul li a:hover {
+    background-color: #218f72; /* Hover renginde değişiklik */
+    color: #fff;
+    border-radius: 25px; /* Oval hover efekti */
+    transform: scale(1.1);
+}
+
+/* Kare arka plan efekti */
+nav ul li a::before {
+    content: ''; /* Pseudo element içeriği */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Arka plan genişliği */
+    height: 100%; /* Arka plan yüksekliği */
+    background-color: rgba(14, 3, 39, 0.1); /* Arka plan rengi */
+    z-index: -1; /* Arka planı yazının arkasına yerleştir */
+    transform: scale(0); /* Varsayılan olarak gizle */
+    transition: transform 0.3s ease; /* Yumuşak geçiş efekti */
+    border-radius: 0px; /* Kare arka plan */
+}
+
+/* Hover sırasında arka planı görünür yap */
+nav ul li a:hover::before {
+    transform: scale(1); /* Arka planı görünür yap */
+}
+
+/* Logo Stili */
+.logo {
+    display: inline-block;
+    margin-right: 20px; /* Menüden uzaklık */
+    vertical-align: middle;
+}
+
+.logo img {
+    max-height: 50px; /* Logonun maksimum yüksekliği */
+    width: auto; /* Oranları koru */
+}
+/* Logo Konteyneri */
+.logo {
+    background-color: transparent; /* Arka planı şeffaf yap */
+    padding: 5px; /* Logonun iç boşluklarını ayarla */
+    border-radius: 8px; /* Köşe yuvarlama */
+    display: inline-block; /* Logoyu düzgün hizala */
+}
+
+/* Logo Resmi */
+.logo img {
+    background-color: transparent; /* Görselin arka planını kaldır */
+    mix-blend-mode: multiply; /* Görsel arka planını şeffaflaştır */
+    max-height: 50px; /* Logonun maksimum yüksekliği */
+    width: auto; /* Oranları koru */
+    display: block; /* Boşlukları kaldır */
+}
+
+
+/* Header Stili */
+header {
+    display: flex;
+    align-items: center; /* Dikey hizalama */
+    justify-content: space-between; /* Menü ve logo arasında boşluk */
+    background-color: #a6ab17; /* Header arka plan rengi */
+    padding: 10px 20px; /* İç boşluk */
+    border-radius: 50px; /* Header'ı oval hale getirmek için */
+    overflow: hidden; /* İç taşmaları önlemek için */
+    margin-top: 10px; /* Menü üstü boşluk */
+    margin-left: 10px; /* Sol boşluk */
+    margin-right: 10px; /* Sağ boşluk */
+}
+
+
+/*                                                                          Menü Sabitleme                                                       */
+
+header {
+    position: fixed; /* Menü sabitlenir */
+    top: 0; /* Sayfanın en üstünde olur */
+    left: 0;
+    width: 100%; /* Sayfanın tamamını kaplar */
+    z-index: 1000; /* Menü üstte görünür */
+    background-color: #333; /* Menü arka plan rengi */
+    padding: 10px 20px; /* İç boşluk */
+    border-radius: 50px; /* Sağ ve sol oval uçlar */
+    overflow: hidden; /* Taşmaları engeller */
+}
+
+/* Sayfa İçeriği */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 80px; /* Menü yüksekliği kadar boşluk */
+    background-color: #f4f4f4;
+}
+
+
+/* Footer Stili */
+footer {
+    background-color: #333; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    text-align: center; /* Metni ortala */
+    padding: 20px 0; /* Üst ve alt boşluk */
+    margin-top: 20px; /* İçerik ile footer arasında boşluk */
+    position: relative; /* Normalde akışta olur */
+    width: 100%; /* Sayfanın genişliğini kaplar */
+    bottom: 0;
+}
+
+footer p {
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+.footer-links {
+    margin-top: 10px; /* Üstten biraz boşluk */
+}
+
+.footer-links a {
+    color: white; /* Bağlantı rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    margin: 0 10px; /* Bağlantılar arası boşluk */
+    font-size: 14px; /* Yazı boyutu */
+}
+
+.footer-links a:hover {
+    color: #ffcc00; /* Hover sırasında renk değişimi */
+    text-decoration: underline; /* Hover sırasında alt çizgi */
+}
+
+
